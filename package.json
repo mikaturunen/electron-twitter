@@ -1,7 +1,7 @@
 {
   "name": "electron-twitter",
-  "version": "0.0.1",
-  "description": "Hello world style application on top of Electron to give it a good spin",
+  "version": "0.0.2",
+  "description": "Tutorial / Hello world style application on top of Electron to give it a good spin",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
