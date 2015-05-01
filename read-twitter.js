@@ -33,7 +33,7 @@ var client = new Twitter({
 });
 
 var params = {
-    screen_name: "mikaturunen"
+    screen_name: process.env.TWITTER_USER || "mikaturunen"
 };
 
 var twitterReader = {
