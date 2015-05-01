@@ -51,8 +51,9 @@ var twitterReader = {
                 return;
             }
 
-            console.log(tweets);
-            mainWindow.webContents.send("tweets", tweets);
+            var textContentOfTweets = tweets.map(function(t) { return { text: t.text, user: t.user.screen_name }; });
+            console.log(textContentOfTweets);
+            mainWindow.webContents.send("tweets", textContentOfTweets);
         });
     }
 };
