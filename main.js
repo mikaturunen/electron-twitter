@@ -1,8 +1,10 @@
-var app = require("app");                       // Module to control application life.
-var BrowserWindow = require("browser-window");  // Module to create native browser window.
+// Loads Electron specific app that is not commonly available for node or io.js
+var app = require("app");
+// Loads the Electron specific module or browser handling
+var BrowserWindow = require("browser-window");
 
 // Report crashes to our server.
-require("crash-reporter").start();
+var crashReporter = require("crash-reporter");
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the javascript object is GCed.
@@ -18,6 +20,8 @@ app.on("window-all-closed", function() {
 // This method will be called when Electron has done everything
 // initialization and ready for creating browser windows.
 app.on("ready", function() {
+    crashReporter.start();
+    
     // Create the browser window.
     mainWindow = new BrowserWindow({
         width: 800,
