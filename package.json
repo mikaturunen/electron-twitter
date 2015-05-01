@@ -22,5 +22,7 @@
   "bugs": {
     "url": "https://github.com/mikaturunen/electron-twitter/issues"
   },
-  "homepage": "https://github.com/mikaturunen/electron-twitter"
+  "homepage": "https://github.com/mikaturunen/electron-twitter",
+  "dependencies": {
+  }
 }
