@@ -39,15 +39,13 @@ var params = {
 var twitterReader = {
     read: function(mainWindow) {
         if (!variablesInPlace) {
-            twitterEnvironmentVariablesMissing();
-            // TODO send info to client
             return;
         }
 
         // Query twitter for feed information
         client.get("statuses/user_timeline", params, function(error, tweets, response) {
             if (error) {
-                console.log();
+                console.log(error);
                 return;
             }
 

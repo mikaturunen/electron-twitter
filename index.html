@@ -14,7 +14,10 @@
                     return;
                 }
 
+                var tweetHeader = document.getElementById("tweetheader");
+                tweetHeader.appendChild(document.createTextNode("Tweets:"));
                 var tweetsCollection = document.getElementById("tweets");
+
                 tweets.forEach(function(tweet) {
                     // You should _never_ do this in a real application but instead
                     // use a framework; for example, Angular.js and bind the data into the html scope
@@ -32,7 +35,7 @@
         <h2>Hello Twitter!</h2>
         We are using io.js <script>document.write(process.version)</script> and Electron <script>document.write(process.versions["electron"])</script>.
 
-        <h2>Tweets:</h2>
+        <h2 id="tweetheader"></h2>
         <ul id="tweets"></ul>
     </body>
 </html>
