@@ -9,6 +9,7 @@ Details are provided as part of the environmental variables the application requ
 As it's not currently packed into a distributable of it's own as that warrants for another tutorial on it's own we are just simply going to run it through NPM and jump through some hoops.
 
 Here we go:
+
     cd some/temp/location/
     npm install electron-twitter
     cd node_modues/electron-twitter
