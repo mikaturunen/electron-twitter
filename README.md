@@ -12,7 +12,7 @@ Here we go:
 
     cd some/temp/location/
     npm install electron-twitter
-    cd node_modues/electron-twitter
+    cd node_modules/electron-twitter
     npm install
 
 
